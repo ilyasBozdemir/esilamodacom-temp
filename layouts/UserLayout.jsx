@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 
-import Footer from "../components/Footer";
 import ScrollToTop from "../components/ScrollToTop";
-import PopupWithDiscount from "../components/PopupWithDiscount";
-import Sidebar from "../components/Sidebar";
-import Header from "../components/Header";
 
 import { Box, Drawer, DrawerOverlay, useDisclosure } from "@chakra-ui/react";
 
