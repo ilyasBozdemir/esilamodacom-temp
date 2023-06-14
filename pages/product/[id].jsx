@@ -20,7 +20,7 @@ import SocialMediaButtons from "../../components/SocialMediaButtons";
 import Link from "next/link";
 import { PriceTag } from "../../components/Product/PriceTag";
 import { BsWhatsapp } from "react-icons/bs";
-import { FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaFacebookF, FaInstagram } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { products } from "../../temp/products";
 
@@ -163,7 +163,8 @@ const ProductDetailPage = ({ product }) => {
               </Stack>
 
               <Stack direction="column" spacing={4} align="center" mt={5}>
-                <Link href={url} passHref>
+                
+                <Link href={url} passHref  target="_blank">
                   <Button
                     colorScheme="whatsapp"
                     variant="outline"
@@ -173,7 +174,19 @@ const ProductDetailPage = ({ product }) => {
                     WhatsApp Katalog'da Gör
                   </Button>
                 </Link>
-                <Link href={product.instagramUrl} passHref>
+
+                <Link href={product.fbUrl} passHref target="_blank"> 
+                  <Button
+                    colorScheme="blue"
+                    variant="outline"
+                    width="full"
+                    leftIcon={<FaFacebookF />}
+                  >
+                    Facebook Mağaza'da Gör
+                  </Button>
+
+                </Link>
+                <Link href={'https://www.instagram.com/esilamoda/shop/'} passHref target="_blank"> 
                   <Button
                     colorScheme="pink"
                     variant="outline"
@@ -182,6 +195,7 @@ const ProductDetailPage = ({ product }) => {
                   >
                     Instagram Mağaza'da Gör
                   </Button>
+
                 </Link>
               </Stack>
             </Flex>

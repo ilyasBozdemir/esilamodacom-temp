@@ -17,7 +17,7 @@ export const products = [
       desktop: "https://web.whatsapp.com/product/6291575924214258/905058177680/?app_absent=0",
       mobile: "https://wa.me/p/6291575924214258/905058177680",
     },
-    instagramUrl: "https://www.instagram.com/esilamoda/shop",
+    fbUrl: "https://www.facebook.com/commerce/products/balance-e%C5%9Fofman/5882720808494784/?ref=mini_shop_items_for_you&referral_code=mini_shop_marketplace_pdp_shop_info",
   },
   {
     id: "cizgili-tunik",
@@ -37,7 +37,7 @@ export const products = [
       desktop: "https://web.whatsapp.com/product/9528798390471383/905058177680/?app_absent=0",
       mobile: "https://wa.me/p/9528798390471383/905058177680",
     },
-    instagramUrl: "https://www.instagram.com/esilamoda/shop",
+    fbUrl: "https://www.facebook.com/commerce/products/%C3%87izgili-tunik/6368061479907332/?ref=mini_shop_items_for_you&referral_code=mini_shop_marketplace_pdp_shop_info",
   },
   {
     id: "fermuarli-esofman-takimi",
@@ -57,7 +57,7 @@ export const products = [
       desktop: "https://web.whatsapp.com/product/6436765579706903/905058177680/?app_absent=0",
       mobile: "https://wa.me/p/6436765579706903/905058177680",
     },
-    instagramUrl: "https://www.instagram.com/esilamoda/shop",
+    fbUrl: "https://www.facebook.com/commerce/products/fermuarl%C4%B1-e%C5%9Fofman-tak%C4%B1m/6090994381027871/?ref=mini_shop_items_for_you&referral_code=mini_shop_marketplace_pdp_shop_info",
   },
   {
     id: "havuc-pantolon",
@@ -77,7 +77,8 @@ export const products = [
       desktop: "https://web.whatsapp.com/product/6108859675879591/905058177680/?app_absent=0",
       mobile: "https://wa.me/p/6108859675879591/905058177680",
     },
-    instagramUrl: "https://www.instagram.com/esilamoda/shop",
+    fbUrl: "https://www.facebook.com/commerce/products/havu%C3%A7-pantolon/6679795098719849/?ref=mini_shop_storefront&referral_code=mini_shop_marketplace_pdp_shop_info",
+   
   },
   {
     id: "lastikli-esofman",
@@ -97,7 +98,7 @@ export const products = [
       desktop: "https://web.whatsapp.com/product/5802436156522807/905058177680/?app_absent=0",
       mobile: "https://wa.me/p/5802436156522807/905058177680",
     },
-    instagramUrl: "https://www.instagram.com/esilamoda/shop",
+    fbUrl: "https://www.facebook.com/commerce/products/lastikli-e%C5%9Fofman/6249822448420897/?ref=mini_shop_items_for_you&referral_code=mini_shop_marketplace_pdp_shop_info",
   },
   {
     id: "tek-cepli-poplin-gomlek",
@@ -117,7 +118,7 @@ export const products = [
       desktop: "https://web.whatsapp.com/product/6537565066311744/905058177680/?app_absent=0",
       mobile: "https://wa.me/p/6537565066311744/905058177680",
     },
-    instagramUrl: "https://www.instagram.com/esilamoda/shop",
+    fbUrl: "https://www.facebook.com/commerce/products/tek-cepli-poplin-g%C3%B6mlek/6414173861977444/?ref=mini_shop_items_for_you&referral_code=mini_shop_marketplace_pdp_shop_info",
   },
   {
     id: "yirtmacli-tunik",
@@ -137,7 +138,7 @@ export const products = [
       desktop: "https://web.whatsapp.com/product/6094598580588979/905058177680/?app_absent=0",
       mobile: "https://wa.me/p/6094598580588979/905058177680",
     },
-    instagramUrl: "https://www.instagram.com/esilamoda/shop",
+    fbUrl: "https://www.facebook.com/commerce/products/%C3%87izgili-tunik/6368061479907332/?ref=mini_shop_items_for_you&referral_code=mini_shop_marketplace_pdp_shop_info",
   },
   {
     id: "ispanyol-paca-pantolon",
@@ -157,7 +158,7 @@ export const products = [
       desktop: "https://web.whatsapp.com/product/6335557699799531/905058177680/?app_absent=0",
       mobile: "https://wa.me/p/6335557699799531/905058177680",
     },
-    instagramUrl: "https://www.instagram.com/esilamoda/shop",
+    fbUrl: "https://www.facebook.com/commerce/products/%C4%B0spanyol-pa%C3%A7a-pantolon/9667014070005412/?ref=mini_shop_items_for_you&referral_code=mini_shop_marketplace_pdp_shop_info",
   },
   {
     id: "bol-paca-pantolon",
@@ -177,6 +178,6 @@ export const products = [
       desktop: "https://web.whatsapp.com/product/9276162575789389/905058177680/?app_absent=0",
       mobile: "https://wa.me/p/9276162575789389/905058177680",
     },
-    instagramUrl: "https://www.instagram.com/esilamoda/shop",
+    fbUrl: "https://www.facebook.com/commerce/products/bol-pa%C3%A7a-pantolon/6244335845682299/?ref=mini_shop_items_for_you&referral_code=mini_shop_marketplace_pdp_shop_info",
   },
 ];
