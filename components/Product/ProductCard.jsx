@@ -24,49 +24,50 @@ export const ProductCard = (props) => {
       }}
       {...rootProps}
     >
-      <Box position="relative" cursor="pointer"  boxShadow={'0px 0px 10px rgba(0, 0, 0, 0.2)'}>
-        <AspectRatio ratio={1}>
-          <Image
-            src={imageUrl[0]}
-            alt={name}
-            draggable="false"
-            fallback={<Skeleton />}
-            borderRadius={{
-              base: "md",
-              md: "xl",
-            }}
-            onClick={() => {
-              window.open(`/product/${product.id}`);
-            }}
-          
-          />
-        </AspectRatio>
-      </Box>
-      <Stack align="center" spacing="1">
-        <Text
-          fontWeight="medium"
-          color={useColorModeValue("gray.700", "gray.400")}
-          onClick={() => {
-            window.open(`/product/${product.id}`);
-          }}
+      {" "}
+      <Link href={`/product/${product.id}`} passHref>
+        <Box
+          position="relative"
           cursor="pointer"
+          boxShadow={"0px 0px 10px rgba(0, 0, 0, 0.2)"}
         >
-          <>{name}</>
-        </Text>
+          <AspectRatio ratio={1}>
+            <Image
+              src={imageUrl[0]}
+              alt={name}
+              draggable="false"
+              fallback={<Skeleton />}
+              borderRadius={{
+                base: "md",
+                md: "xl",
+              }}
+            />
+          </AspectRatio>
+        </Box>
+      </Link>
+      <Stack align="center" spacing="1">
+        <Link href={`/product/${product.id}`} passHref>
+          <Text
+            fontWeight="medium"
+            color={useColorModeValue("gray.700", "gray.400")}
+            cursor="pointer"
+          >
+            <>{name}</>
+          </Text>
+        </Link>
         <PriceTag price={price} salePrice={salePrice} currency="TRY" />
       </Stack>
       <Stack align="center">
-        <Button
-          colorScheme="gray"
-          variant={"outline"}
-          width="full"
-          leftIcon={<FiChevronRight />}
-          onClick={() => {
-            window.open(`/product/${product.id}`);
-          }}
-        >
-          Daha Fazlasını Gör
-        </Button>
+        <Link href={`/product/${product.id}`} passHref>
+          <Button
+            colorScheme="gray"
+            variant={"outline"}
+            width="full"
+            leftIcon={<FiChevronRight />}
+          >
+            Daha Fazlasını Gör
+          </Button>
+        </Link>
       </Stack>
     </Stack>
   );

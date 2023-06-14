@@ -24,7 +24,7 @@ import { FaInstagram } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { products } from "../../temp/products";
 
-const ProductDetailPage = ({product}) => {
+const ProductDetailPage = ({ product }) => {
   const router = useRouter();
   const { id } = router.query;
 
@@ -48,8 +48,6 @@ const ProductDetailPage = ({product}) => {
     }
   }, []);
 
-
-
   const desktopCatalogUrl = product.wpCatalogUrl.desktop;
   const mobileCatalogUrl = product.wpCatalogUrl.mobile;
 
@@ -60,14 +58,13 @@ const ProductDetailPage = ({product}) => {
     url = desktopCatalogUrl;
   }
 
-
-  const productMeta ={
-    pageTitle:product.name +' | esilamoda.com',
+  const productMeta = {
+    pageTitle: product.name + " | esilamoda.com",
     id: product.id,
     name: product.name,
     description: product.description,
     imageUrl: product.imageUrl[0],
-  }
+  };
 
   return (
     <>
@@ -88,16 +85,15 @@ const ProductDetailPage = ({product}) => {
       </Head>
 
       <Center>
-      
-          <Image
-            src="images/logo.png"
-            draggable={false}
-            width={150}
-            height={80}
-            onClick={() => {
-              window.open('/?ref=product-detail');
-            }}
-          />
+        <Image
+          src="images/logo.png"
+          draggable={false}
+          width={150}
+          height={80}
+          onClick={() => {
+            window.open("/?ref=product-detail");
+          }}
+        />
       </Center>
 
       <Center my={10}>
@@ -131,7 +127,7 @@ const ProductDetailPage = ({product}) => {
                     color={useColorModeValue("gray.700", "gray.400")}
                     fontSize={"4xl"}
                   >
-                    < >{product.name}</>
+                    <>{product.name}</>
                   </Text>
 
                   <Text fontSize={"2xl"}>
@@ -155,28 +151,26 @@ const ProductDetailPage = ({product}) => {
               </Stack>
 
               <Stack direction="column" spacing={4} align="center" mt={5}>
-                <Button
-                  colorScheme="whatsapp"
-                  variant="outline"
-                  width="full"
-                  leftIcon={<BsWhatsapp />}
-                  onClick={() => {
-                    window.open(url, "_blank");
-                  }}
-                >
-                  WhatsApp Katalog'da Gör
-                </Button>
-                <Button
-                  colorScheme="pink"
-                  variant="outline"
-                  width="full"
-                  leftIcon={<FaInstagram />}
-                  onClick={() => {
-                    window.open(product.instagramUrl, "_blank");
-                  }}
-                >
-                  Instagram Mağaza'da Gör
-                </Button>
+                <Link href={url} passHref>
+                  <Button
+                    colorScheme="whatsapp"
+                    variant="outline"
+                    width="full"
+                    leftIcon={<BsWhatsapp />}
+                  >
+                    WhatsApp Katalog'da Gör
+                  </Button>
+                </Link>
+                <Link href={product.instagramUrl} passHref>
+                  <Button
+                    colorScheme="pink"
+                    variant="outline"
+                    width="full"
+                    leftIcon={<FaInstagram />}
+                  >
+                    Instagram Mağaza'da Gör
+                  </Button>
+                </Link>
               </Stack>
             </Flex>
           </Flex>
@@ -193,18 +187,17 @@ const ProductDetailPage = ({product}) => {
 };
 
 export async function getStaticPaths() {
-  
   const paths = products.map((product) => {
     return {
       params: {
-        id: product.id
-      }
+        id: product.id,
+      },
     };
   });
 
   return {
     paths,
-    fallback: false, 
+    fallback: false,
   };
 }
 
@@ -218,7 +211,5 @@ export async function getStaticProps({ params }) {
     },
   };
 }
-
-
 
 export default ProductDetailPage;

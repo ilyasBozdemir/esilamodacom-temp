@@ -7,7 +7,7 @@ export default class MyDocument extends Document {
     const googleSiteVerification = ``
     const baseUrl =
       process.env.NODE_ENV === 'production'
-        ? 'https://myproductionurl.com'
+        ? 'http://www.esilamoda.com/'
         : 'http://localhost:3000'
     return (
       <Html lang="tr">
