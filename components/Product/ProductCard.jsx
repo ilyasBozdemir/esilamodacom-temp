@@ -24,7 +24,6 @@ export const ProductCard = (props) => {
       }}
       {...rootProps}
     >
-      {" "}
       <Link href={`/product/${product.id}`} passHref>
         <Box
           position="relative"
@@ -64,6 +63,7 @@ export const ProductCard = (props) => {
             variant={"outline"}
             width="full"
             leftIcon={<FiChevronRight />}
+            color={useColorModeValue("green", "gray.400")}
           >
             Daha Fazlasını Gör
           </Button>

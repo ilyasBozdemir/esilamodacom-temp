@@ -85,15 +85,14 @@ const ProductDetailPage = ({ product }) => {
       </Head>
 
       <Center>
-        <Image
-          src="images/logo.png"
-          draggable={false}
-          width={150}
-          height={80}
-          onClick={() => {
-            window.open("/?ref=product-detail");
-          }}
-        />
+        <Link href={`/?ref=product-detail`} passHref>
+          <Image
+            src="images/logo.png"
+            draggable={false}
+            width={150}
+            height={80}
+          />
+        </Link>
       </Center>
 
       <Center my={10}>
@@ -137,15 +136,28 @@ const ProductDetailPage = ({ product }) => {
               </Stack>
 
               <Stack>
-                <Stack spacing="1" maxW={450}>
+                <Stack
+                  spacing="1"
+                  maxW={450}
+                  color={useColorModeValue("gray.700", "gray.400")}
+
+                >
                   <Text fontSize={"md"}>{product.description}</Text>
                 </Stack>
               </Stack>
               <Stack>
-                <Stack spacing="1" maxW={450}>
+                <Stack
+                  spacing="1"
+                  maxW={450}
+                  color={useColorModeValue("gray.700", "gray.400")}
+                >
                   <Text fontSize={"md"}> Renk: {product.details.color}</Text>
                 </Stack>
-                <Stack spacing="1" maxW={450}>
+                <Stack
+                  spacing="1"
+                  maxW={450}
+                  color={useColorModeValue("black", "gray.400")}
+                >
                   <Text fontSize={"md"}> Beden: {product.details.size}</Text>
                 </Stack>
               </Stack>
