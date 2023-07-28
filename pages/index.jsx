@@ -74,7 +74,7 @@ export default function HomePage() {
       <>
         <Center>
           <Link href={`/?ref=home-page-navbar`} passHref>
-            <Image src="images/logo.png" draggable={false} />
+            <Image src="images/logo.png" alt={'site-logo'} draggable={false} />
           </Link>
         </Center>
 
