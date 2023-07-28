@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import React from "react";
 import { useEffect } from "react";
 
-function linktree() {
+function Linktree() {
   const router = useRouter();
 
   useEffect(() => {
@@ -11,4 +11,4 @@ function linktree() {
   }, []);
 }
 
-export default linktree;
+export default Linktree;

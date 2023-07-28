@@ -1,0 +1,2 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[92],{2718:function(n,e,u){(window.__NEXT_P=window.__NEXT_P||[]).push(["/linktree",function(){return u(2062)}])},2062:function(n,e,u){"use strict";u.r(e);var t=u(1163),i=u(7294);e.default=function(){let n=(0,t.useRouter)();(0,i.useEffect)(()=>{n.push("https://heylink.me/esilamoda/")},[])}}},function(n){n.O(0,[774,888,179],function(){return n(n.s=2718)}),_N_E=n.O()}]);
+//# sourceMappingURL=linktree-4b457766ad461bb9.js.map
