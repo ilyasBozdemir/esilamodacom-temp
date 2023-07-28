@@ -24,7 +24,12 @@ export const ProductCard = (props) => {
       }}
       {...rootProps}
     >
-      <Link href={`/product/${product.id}`} passHref>
+      <Link
+        href={`/product/[id]`}
+        as={`/product/${product.id}`}
+        shallow
+        passHref
+      >
         <Box
           position="relative"
           cursor="pointer"

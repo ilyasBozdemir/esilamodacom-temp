@@ -5,7 +5,6 @@ import {
   Heading,
   Text,
   Image,
-  Link,
   Grid,
   GridItem,
   Center,
@@ -15,6 +14,7 @@ import {
 
 import SocialMediaButtons from "../components/SocialMediaButtons";
 import Product from "../components/Product";
+import Link from "next/link";
 export default function HomePage() {
   const initialSiteState = {
     author: ``,
