@@ -1,0 +1,2 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[92],{2718:function(n,e,t){(window.__NEXT_P=window.__NEXT_P||[]).push(["/linktree",function(){return t(2062)}])},2062:function(n,e,t){"use strict";t.r(e),t(1163);var u=t(7294);e.default=function(){(0,u.useEffect)(()=>{window.location.href="https://heylink.me/esilamoda/"},[])}}},function(n){n.O(0,[774,888,179],function(){return n(n.s=2718)}),_N_E=n.O()}]);
+//# sourceMappingURL=linktree-6a8897ed6f572c78.js.map
