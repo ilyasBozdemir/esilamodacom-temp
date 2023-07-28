@@ -5,7 +5,6 @@ function Linktree() {
   return (
     <div>
       <h1>Yönlendiriliyorsunuz...</h1>
-      {/* Opsiyonel olarak yönlendirme olmadan önce burada içerik gösterebilirsiniz */}
     </div>
   );
 }
