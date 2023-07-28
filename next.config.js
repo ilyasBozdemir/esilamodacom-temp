@@ -7,6 +7,24 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 
 
 module.exports = withBundleAnalyzer({
+  async headers() {
+    return [
+      {
+        // Tüm endpointlara CORS ayarlarını uygula
+        source: '/:path*',
+        headers: [
+          {
+            key: 'Access-Control-Allow-Origin',
+            value: '*',
+          },
+          {
+            key: 'Access-Control-Allow-Methods',
+            value: 'GET, POST, PUT, DELETE',
+          },
+        ],
+      },
+    ];
+  },
   reactStrictMode: false,
   images: {
     unoptimized: true
